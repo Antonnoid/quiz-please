@@ -4,6 +4,8 @@ const readlineSync = require('readline-sync');
 
 let fileName = '';
 
+// console.log('Привет!');
+
 const choose =  readlineSync.question(`Eto windows, vyberite temy:
 1. Food
 2. Shrek
@@ -29,10 +31,14 @@ function read() {
   for (let i = 0; i < 5; i++) {
     arr[i] = subarr.slice(i * size, i * size + size);
   }
- return arr
+  console.log(arr);
+//  return arr
 }
 
 read();
 
-function 
+// function run (arr) {
+//     console.log(arr);
+// }
 
+// run ()
