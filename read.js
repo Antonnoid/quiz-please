@@ -39,8 +39,8 @@ const themeArr = read();
 // console.log('LOG:', themeArr)
 
 function run() {
-  let question;
-  let answer;
+  // let question;
+  // let answer;
   let counter = 0;
   for (let i = 0; i < themeArr.length; i++) {
     const quest = readlineSync.question(themeArr[i][0], themeArr[i][1]);
@@ -51,7 +51,7 @@ function run() {
       console.log('Не умница!');
     }
   }
-  console.log(`Твои познания равны ${counter}`);
+  console.log(`Твои познания равны ${counter} из 5`);
 }
 run();
 
