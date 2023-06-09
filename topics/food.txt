@@ -1,10 +1,10 @@
 V golubtsah yest' ris?
-no
-Папа готовит вкуснее мамы?
-да
-"Виалоне" это вид пасты?
-нет
-Может ли идти в ПАЭЛЬЮ фундук?
-нет
-Любит ли Гагик шашлык?
-да
+net
+Papa gotovit vkusnee mamy?
+da
+'Vialone' eto vid pasty?
+net
+Mozhet li v pael'u idti funduk?
+net
+Lubit li Gagik shashlyk?
+da
