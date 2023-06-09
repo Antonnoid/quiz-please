@@ -1,11 +1,14 @@
-const { log } = require('console');
 const fs = require('fs');
 const path = require('path');
 const readlineSync = require('readline-sync');
+const { EOL } = require('os');
+
+const userName = readlineSync.question(`Kak tebya zovut? ${EOL}`);
+console.log(`Zdarova ${userName}!`);
 
 let fileName = '';
 
-console.log('Hello,Elbrus!');
+// console.log('Hello,Elbrus!');
 
 const choose = readlineSync.question(`Eto windows, vyberite temy:
 1. Food
@@ -31,7 +34,7 @@ function read() {
   for (let i = 0; i < 5; i++) {
     arr[i] = subarr.slice(i * size, i * size + size);
   }
-//   console.log(arr);
+  //   console.log(arr);
   return arr;
 }
 
@@ -42,12 +45,12 @@ function run() {
   // let answer;
   let counter = 0;
   for (let i = 0; i < themeArr.length; i++) {
-    const quest = readlineSync.question(themeArr[i][0], themeArr[i][1]);
+    const quest = readlineSync.question(`${themeArr[i][0]}${EOL}`);
     if (quest === themeArr[i][1]) {
-      console.log('Умница!');
+      console.log('\x1b[42mУмница!', '\x1b[0m');
       counter += 1;
     } else {
-      console.log('Не умница!');
+      console.log('\x1b[41mНе умница!', '\x1b[0m');
     }
   }
   console.log(`Твои познания равны ${counter} из 5`);
