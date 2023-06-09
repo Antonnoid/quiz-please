@@ -57,8 +57,3 @@ function run() {
 }
 run();
 
-// function run (arr) {
-//     console.log(arr);
-// }
-
-// run ()
