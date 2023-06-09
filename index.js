@@ -1,3 +1,4 @@
+
 const fs = require('fs');
 const path = require('path');
 const readlineSync = require('readline-sync');
@@ -16,3 +17,4 @@ const game = readlineSync.question('Желаешь сыграть в игру? '
 if (game.toLowerCase() === 'да') {
   console.log(`Спасибо за игру ${userName}!`, myQuiz());
 } else console.log(`Ну и пошел ты ${userName}!`);
+
